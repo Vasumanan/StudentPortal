@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="staffedit.css"/>
+    <script src="js/staffedit.js"></script>
+</head>
+<body>
+    <h3>EDIT STAFF DETAILS</h3>
+    <div id="staffId">
+      <form  onsubmit="return false">
+        <label for="StaffId">Staff Id</label>
+        <input type="text" id="StaffId" required>
+        <input type="submit" id="staffIdsubmit" value="Submit" onclick="loadStaffdata()" >
+      </form>
+    </div>
+    <div>
+      <form  onsubmit="return false">
+        <label for="firstname" >First Name</label>
+        <input type="text" id="firstname" required> 
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" required>
+        <label for="emailid">Email Id</label>
+        <input type="email" id="emailid" required>
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+        <label for="password">Password</label>
+        <input type="text" id="password" required>
+        <input type="submit" value="Submit" onclick="updateStaffData()">
+      </form>
+    </div>
+    </body>
+</html>

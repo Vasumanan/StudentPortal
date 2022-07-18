@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="staffedit.css"/>
+    <script src="js/Studentedit.js"></script>
+</head>
+<body>
+    <h3>EDIT STUDENT DETAILS</h3>
+    <div id="studentId">
+      <form  onsubmit="return false">
+        <label for="StudentId">Student Id</label>
+        <input type="text" id="StudentId" required>
+        <input type="submit" id="studentIdsubmit" value="Submit" onclick="loadStudentdata()" >
+      </form>
+    </div>
+    <div>
+      <form  onsubmit="return false">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" required="required"> 
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" required="required">
+       
+        <label for="classno">Class</label>
+        <input type="text" id="classno" required="required">
+
+        <label for="section">Section</label>
+        <input type="text" id="section" required="required">
+
+        <label for="tamilmark">Tamil Mark</label>
+        <input type="text" id="tamilmark" required="required"> 
+
+        <label for="englishmark">English Mark</label>
+        <input type="text" id="englishmark" required="required">
+
+        <label for="mathsmark">Maths Mark</label>
+        <input type="text" id="mathsmark" required="required">
+
+        <label for="sciencemark">Science Mark</label>
+        <input type="text" id="sciencemark" required="required">
+
+        <label for="socialmark">Social Mark</label>
+        <input type="text" id="socialmark" required="required">
+        <label for="total">Total</label >
+        <input type="text" id="total" required="required" readonly>
+        <label for="percentage">Percentage</label>
+        <input type="text" id="percentage" required="required" readonly>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" required="required">
+
+        <label for="password">Password</label>
+        <input type="text" id="password" required="required">
+
+        <input type="submit" value="Submit" onclick="updateStudentData()">
+      </form>
+    </div>
+    </body>
+</html>

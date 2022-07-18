@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="staffdetails.css"/>
+    <script src="js/staffdetails.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body onload="staffdetails()">
+    <h1>STAFF DETAILS</h1>
+    <div><button class="btn add" onclick="addStaff()">ADD</button>
+        <button class="btn edit" onclick="editStaff()">EDIT</button>
+        <button class="btn delete" onclick ="deleteStaff()">DELETE</button> </div>
+    <table class="stafftable">
+        <tr class="firstrow">
+          <th>Staff Id</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email ID</th>
+          <th>Username</th>
+          <th>Password</th>
+        </tr> 
+        <tbody id="staffs">
+        </tbody>
+    </table>
+</body>
+</html>
